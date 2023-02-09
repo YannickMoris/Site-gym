@@ -511,3 +511,150 @@ h1 {
         font-size: 50px;
     }
 }
+
+/* ---------------- section tarifs ------------------ */
+
+.titre-tarifs {
+    background: #f1f1f1;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#tarifs {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    max-width: 1300px;
+    min-width: 300px;
+    margin: 0 auto 100px;
+}
+
+.carte-tarif {
+    width: 350px;
+    height: auto;
+    background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+    color: #f1f1f1;
+    margin: 20px 10px;
+    border-radius: 5px;
+}
+
+.carte-tarif h3 {
+    text-align: center;
+    font-size: 45px;
+    margin: 25px 0;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.prix-carte {
+    text-align: center;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.prix-carte span {
+    font-size: 80px;
+    position: relative;
+}
+
+.prix-carte span::after {
+    content: "€";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    font-size: 25px;
+}
+
+.infos-carte {
+    width: 170px;
+    margin: 20px auto 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 22px;    
+}
+
+.infos-carte img {
+    margin-right: 7px;
+    width: 20px;
+}
+
+/* ---------------- section formulaire ------------------ */
+
+.titre-contact {
+    border-top: 1px dashed #000;
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+label, input {
+    width: 100%;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+form input {
+    padding: 10px 5px;
+}
+
+input:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+label:nth-child(5) {
+    margin-bottom: 10px;
+}
+
+.form-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 1100px) {
+    #contact {
+        width: 80%;
+    }
+}
+
+/* ---------------- section footer ------------------ */
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px dashed #fff;
+    color: #fff;
+    background: #000;
+
+}
